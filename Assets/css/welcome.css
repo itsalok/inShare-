@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .user{
+    font-size: 0.8em;
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 9vh;
+  }
+  
+  section .container {
+    position: relative;
+    width: 1250px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  section .container .main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  section .container .main .imgBx {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    transition: 0.8s;
+  }
+  section .container .main .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  section .container .main .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+  }
+  .btn-send{
+    background-color: #55ACEE;
+    color: #fff !important;
+    margin: 20px 0;
+    font-size: 16px;
+    width: 155px;
+    cursor: pointer;
+  }
+  
+  .receiveBox-table{
+    width: 80vw !important;
+  }
+  
+  section .container .receiveBox {
+    pointer-events: none;
+  }
+  
+  section .container.active .receiveBox {
+    pointer-events: initial;
+  }
+  
+  section .container .receiveBox .formBx {
+    left: 100%;
+  }
+  
+  section .container.active .receiveBox .formBx {
+    left: 0;
+  }
+  
+  section .container .receiveBox .imgBx {
+    left: -100%;
+  }
+  
+  section .container.active .receiveBox .imgBx {
+    left: 0%;
+  }
+  
+  section .container .sendBox .formBx {
+    left: 0%;
+  }
+  
+  section .container.active .sendBox .formBx {
+    left: 100%;
+  }
+  
+  section .container .sendBox .imgBx {
+    left: 0%;
+  }
+  
+  section .container.active .sendBox .imgBx {
+    left: -100%;
+  }
+  
+  @media (max-width: 991px) {
+    section .container {
+      max-width: 400px;
+    }
+  
+    section .container .imgBx {
+      display: none;
+    }
+  
+    section .container .main .formBx {
+      width: 100%;
+    }
+  }
+ 
+
+ 
+#one
+{
+    margin-top: 10vh;
+    padding-left: 1vw;
+    height: 500px;
+    background: #fff;
+}
+.it .btn-orange
+{
+	background-color: transparent;
+	border-color: #55ACEE;
+  color: #55ACEE;
+  width: 18vw;
+  height: 30vh;
+  padding-top: 18px;
+  border: 3px solid;
+  border-style: dashed;
+  font-weight: 600;
+}
+.it input.form-control
+{
+  width: 26vw;
+	height: 65px;
+	border:none;
+  margin-bottom:0px;
+	border-radius: 0px;
+	border-bottom: 3px solid #ddd;
+	box-shadow: none;
+}
+.it .form-control:focus
+{
+	border-color: #55ACEE;
+	box-shadow: none;
+	outline: none;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.file-upl{
+  display: flex;
+  justify-content: center;
+}
+.email-area{
+  display: flex;
+  justify-content: center;
+}
+.fileUpload input.upload {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 45px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0;  
+    
+}
+.fileUpload .icon{
+  display: flex;
+  justify-content: center;
+}
+.fileUpload .upl{
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #333;
+}
+.browse{
+  color: #1382d6 !important;
+}
+#file-upload-filename{
+  font-weight: 700;
+}
+.it .btn-new, .it .btn-next
+{
+	margin: 20px 10px;
+	border-radius: 0px;
+	background-color: #333;
+	color: #fff !important;
+	font-size: 16px;
+    width: 155px;
+    cursor: pointer;
+}
+.it .btn-next
+{
+	background-color: #55ACEE;
+	color: #fff !important;
+}
+
+
+.it .uploadDoc
+{
+	margin-bottom: 20px;
+}
+.it .uploadDoc
+{
+	margin-bottom: 20px;
+}
+.it .btn-orange img {
+    width: 180px;
+}
+p
+{
+  font-size:16px;
+  text-align:center;
+ 
+}
